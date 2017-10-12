@@ -50,7 +50,7 @@ router.get('/', function(req, res, next) {
       var notifs = rows2notifs(rows);
       var uids = rows2uids(rows);
       // var options = { user_id: uids.slice(0, 10) };
-      var options = { user_id: '560251114,909026307572326400' };
+      var options = { user_id: '20536157,783214' };
       client.get('/users/lookup', options, function(error, users, response){
         if (!error) {
           console.log(users);
